@@ -14,6 +14,7 @@ public class estudante {
         else{
             
         }
+        Entrada.close();
 
 
     }
