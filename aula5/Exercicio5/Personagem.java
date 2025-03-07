@@ -1,6 +1,4 @@
-package aula5.Exercicio5;
 
-import java.util.Scanner;
 
 public class Personagem {
     String nome;
@@ -10,7 +8,6 @@ public class Personagem {
     // TODO: estou fazendo uma composição é nao um agregação
     // Agregação deve ser feito na main - estou obrigando o personagem a ter uma arma
 
-
     Personagem(String nome) {
         this.nome = nome;
         pontos = 0;
@@ -18,8 +15,12 @@ public class Personagem {
     }
 
     public void usarArma() {
-        System.out.println("Personagem " + nome + " usando arma");
-        arma.resistencia -= 2;
+        if (this.arma != null ){
+            System.out.println("Personagem " + nome + " usando arma: " +arma.nome);
+            arma.resistencia -= 2;
+            return;
+        }
+        System.out.println("Personagem não tem arma");
 
     }
 
@@ -27,8 +28,10 @@ public class Personagem {
         if (vida > 0) {
             System.out.println("Personagem " + nome + " tomou dano");
             vida -= 5;
+            return;
         }
         System.out.println("Personagem " + nome + " está morto");
+        
 
     }
 
