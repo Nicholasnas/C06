@@ -14,7 +14,7 @@ public class Livro {
     }
 
     public String detalhes(){
-        sout 
+        return " ";
 
     }
     public void emprestar(){

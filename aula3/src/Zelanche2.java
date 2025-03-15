@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class zelanche1{
+public class Zelanche2{
     public static void main(String [] args){
         Scanner entrada = new Scanner(System.in);
 
