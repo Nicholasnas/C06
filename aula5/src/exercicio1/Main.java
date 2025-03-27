@@ -7,7 +7,7 @@ public class Main {
         // Gerar num aleátorio entre 0 e 1
         Random rand = new Random();
     
-
+        
 
     }
 }

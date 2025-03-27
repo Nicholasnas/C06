@@ -2,6 +2,7 @@ package exercicio0;
 public class Cantina {
 
     String nome;
+    // Agregação 1..* pelo menos um salgado na cantina
     Salgado salgados[] = new Salgado[5];
 
     Cantina(String nome){
