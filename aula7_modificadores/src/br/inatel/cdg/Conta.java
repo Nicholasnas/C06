@@ -1,15 +1,14 @@
+package src.br.inatel.cdg;
 
 public class Conta {
     private float saldo;
-    private String nome;
     private int numero;
-    private Cliente titular;
     private float limite;
+    private Cliente clientes [];
 
-    Conta(String nome, int numero, Cliente titular) {
-        this.nome = nome;
+    public Conta(int numero, Cliente titular) {
+        setClientes(new Cliente[3]);
         this.numero = numero;
-        this.titular = titular;
         this.saldo = 0;
         this.limite = 0;
     }
@@ -18,6 +17,9 @@ public class Conta {
     }
     public void setSaldo(float saldo){
         this.saldo = saldo;
+    }
+    public void setClientes(Cliente[] clientes) {
+        this.clientes = clientes;
     }
     
     void depositar(float valor) {

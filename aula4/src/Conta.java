@@ -1,8 +1,5 @@
 
-
-
 public class Conta {
-
     float saldo;
     float limite;
     String cliente;
