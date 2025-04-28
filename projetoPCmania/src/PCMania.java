@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class PCMania{
-
+    
     public static void main(String[] args){
         // Criação de computadores
         Computador computadores[] = new Computador[3];
